@@ -1,3 +1,9 @@
+<img width="1916" height="877" alt="Screenshot 2026-09-19 192630" src="https://github.com/user-attachments/assets/68741861-d012-4190-9f36-6816fae2d4db" />
+<img width="1902" height="953" alt="Screenshot 2026-09-19 192606" src="https://github.com/user-attachments/assets/964287eb-2827-43e7-8344-2fe9f674bc59" />
+<img width="1916" height="1002" alt="Screenshot 2026-09-19 192529" src="https://github.com/user-attachments/assets/13b57997-e6f8-4af1-ba8b-0dba3fa6b992" />
+<img width="1905" height="1013" alt="Screenshot 2026-09-19 192510" src="https://github.com/user-attachments/assets/a9aa525a-5a4f-496b-833a-215ba40e69ae" />
+<img width="1917" height="1012" alt="Screenshot 2026-09-19 192447" src="https://github.com/user-attachments/assets/4e2a449a-224a-426f-b14c-e0198769a4e5" />
+<img width="527" height="555" alt="Screenshot 2026-09-19 192425" src="https://github.com/user-attachments/assets/e48a1c3e-4248-4719-8cf9-87337f9935ee" />
 # Network-attack-forecasting
 # ShieldNet — AI-Based Network Attack Forecasting
 
