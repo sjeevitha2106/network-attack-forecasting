@@ -1,3 +1,43 @@
 # network-attack-forecasting
-AI-based network attack forecasting using Random Forest to classify traffic as Benign or Attack, with a Streamlit dashboard for risk scoring.
-ShieldNet — AI-Based Network Attack Forecasting is an AI-powered system that analyzes network traffic flow data and classifies it as Benign or Attack in real time, giving security teams an early-warning risk score before threats escalate. Built for HackDevengers 2.0 (24-hour hackathon), the project addresses a real problem: modern networks generate massive volumes of traffic every second, making manual attack detection difficult and slow, and traditional security systems often flag threats only after damage has occurred, so this project provides a lightweight, AI-driven early-warning system that flags suspicious traffic before it escalates. It works by first cleaning and preprocessing network flow data from the CICIDS2017 dataset (78 features), then training a Random Forest Classifier to distinguish Benign versus Attack traffic, and finally serving predictions through a Streamlit dashboard where users upload traffic CSVs and instantly view predictions (Benign/Attack), a risk score (0–100%), a risk level (Low/Medium/High), and summary metrics like total records, attacks detected, and benign traffic. The tech stack includes Python, Pandas, Scikit-learn (Random Forest Classifier), Streamlit, and Joblib. To run it: install the required libraries with "pip install pandas scikit-learn streamlit joblib", train the model with "python train_model.py" (only needed once, or to retrain), launch the dashboard with "python -m streamlit run app.py", then open the link shown in the terminal (usually http://localhost:8501) and upload a network traffic CSV file to get predictions. The project files include train_model.py (trains and saves the ML model), app.py (the Streamlit dashboard for predictions), data/CICIDS2017_sample_km.csv (the training dataset), and network_attack_model.pkl (the saved trained model). Worth noting: during development, a data leakage issue was identified and fixed, where the model was initially trained using the label column itself as a feature, and after the fix, the model was retrained on the correct feature set for accurate, real-world performance.
+ShieldNet — AI-Based Network Attack Forecasting
+
+What it does:
+- Analyzes network traffic flow data
+- Classifies traffic as Benign or Attack in real time
+- Gives an early-warning risk score before threats escalate
+- Built for HackDevengers 2.0 (24-hour hackathon)
+
+Problem it solves:
+- Networks generate huge traffic volumes every second
+- Manual attack detection is slow and difficult
+- Traditional security systems often catch attacks too late
+- This project flags suspicious traffic before it causes damage
+
+How it works:
+- Trained on the CICIDS2017 dataset (78 network flow features)
+- Uses a Random Forest Classifier to detect attack patterns
+- Streamlit dashboard lets users upload traffic CSVs
+- Instantly shows predictions, risk score (0–100%), and risk level (Low/Medium/High)
+
+Tech stack:
+- Python
+- Pandas
+- Scikit-learn (Random Forest Classifier)
+- Streamlit
+- Joblib
+
+How to run:
+1. Install libraries: pip install pandas scikit-learn streamlit joblib
+2. Train the model: python train_model.py
+3. Launch dashboard: python -m streamlit run app.py
+4. Open the link shown in terminal and upload a CSV file
+
+Project files:
+- train_model.py — trains and saves the ML model
+- app.py — Streamlit dashboard
+- data/CICIDS2017_sample_km.csv — training dataset
+- network_attack_model.pkl — saved trained model
+
+note:
+- We found and fixed a data leakage bug during development (model was accidentally trained using the label column itself)
+- After the fix, the model was retrained correctly for real-world accuracy
